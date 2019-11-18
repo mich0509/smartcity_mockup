@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+    <ImageView
+            android:layout_width="400dp"
+            android:layout_height="200dp" app:srcCompat="@drawable/smartcity"
+            android:id="@+id/img_smartcity" app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="4dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+    />
+    <Button
+            android:layout_width="110dp"
+            android:layout_height="100dp"
+            android:id="@+id/btn_info" app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/img_smartcity"
+            android:text="Information" android:textSize="12sp" android:background="@drawable/peoplemng"
+            android:textStyle="bold"/>
+    <Button
+            android:text="FOOD"
+            android:layout_width="110dp"
+            android:layout_height="100dp"
+            android:id="@+id/btn_food"
+            android:layout_marginStart="8dp"
+            app:layout_constraintStart_toEndOf="@+id/btn_info" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/img_smartcity" android:background="@drawable/foodstore"
+            android:textAlignment="center" android:textStyle="bold" android:textSize="18sp"/>
+    <Button
+            android:text="Enter tainment"
+            android:layout_width="110dp"
+            android:layout_height="100dp"
+            android:id="@+id/button3" android:layout_marginStart="8dp"
+            app:layout_constraintStart_toEndOf="@+id/btn_food" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/img_smartcity" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="32dp" android:background="@drawable/entertainment" android:textStyle="bold"/>
+    <Button
+            android:text="Health and Wellness"
+            android:layout_width="110dp"
+            android:layout_height="100dp"
+            android:id="@+id/btn_health" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/btn_info" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="32dp" android:textStyle="bold" android:background="@drawable/health"/>
+    <Button
+            android:layout_width="110dp"
+            android:layout_height="100dp"
+            android:id="@+id/btn_education" android:layout_marginStart="8dp"
+            app:layout_constraintStart_toEndOf="@+id/btn_health" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/btn_food" android:textSize="15sp" android:text="EDUCATION"
+            android:textStyle="bold" android:background="@drawable/education"/>
+    <Button
+            android:text="BUSINESS"
+            android:layout_width="110dp"
+            android:layout_height="100dp"
+            android:id="@+id/btn_business" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/button3"
+            android:layout_marginStart="8dp" app:layout_constraintStart_toEndOf="@+id/btn_education"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="32dp" android:textSize="15sp"
+            android:textStyle="bold" android:background="@drawable/store"/>
+    <Button
+            android:text="NEWS AND UPDATES"
+            android:layout_width="110dp"
+            android:layout_height="100dp"
+            android:id="@+id/btn_news"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="32dp" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/btn_health" android:textStyle="bold"
+            android:background="@drawable/news"/>
+    <Button
+            android:text="NATIONAL AGENCY"
+            android:layout_width="110dp"
+            android:layout_height="100dp"
+            android:id="@+id/btn_agency" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/btn_education" android:layout_marginStart="8dp"
+            app:layout_constraintStart_toEndOf="@+id/btn_news" android:textStyle="bold"
+            android:background="@drawable/agency"/>
+    <Button
+            android:text="Weather Updates"
+            android:layout_width="110dp"
+            android:layout_height="100dp"
+            android:id="@+id/btn_weather" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/btn_business" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="32dp" app:layout_constraintStart_toEndOf="@+id/btn_agency"
+            android:layout_marginStart="8dp" android:textStyle="bold" android:background="@drawable/weather"/>
+    <com.google.android.material.bottomappbar.BottomAppBar
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.BottomAppBar.Colored"
+            android:layout_gravity="bottom"
+            android:id="@+id/bottomAppBar" android:layout_marginTop="150dp"
+            app:layout_constraintTop_toBottomOf="@+id/btn_agency" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="32dp" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="32dp" app:layout_constraintBottom_toBottomOf="parent"
+            app:backgroundTint="#5FBDBF"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
